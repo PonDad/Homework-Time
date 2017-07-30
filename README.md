@@ -2,8 +2,7 @@
 
 ## 公文式学習法
 
-<a href="https://commons.wikimedia.org/wiki/File:Kumon_Method_Logo.svg#/media/File:Kumon_Method_Logo.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kumon_Method_Logo.svg/1200px-Kumon_Method_Logo.svg.png" alt="Kumon Method Logo.svg"></a>
-<br><small>By <a rel="nofollow" class="external text" href="http://www.kumon.com/">Kumon</a> - Extracted from <a rel="nofollow" class="external text" href="http://www.kumon.com/assets/ca-en/pdfs/Kumon_Recommended_Reading_List.pdf">pdf</a>, パブリック・ドメイン, <a href="https://commons.wikimedia.org/w/index.php?curid=7650645">Link</a></small>
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kumon_Method_Logo.svg/1200px-Kumon_Method_Logo.svg.png)
 
 > 公文式の特長 ～ 公文式学習とは解き方を教わるのではなく、自分の力で教材の問題を解く学習法で、「やればできる」という自己肯定感を育み、未知の領域にも、自分から挑戦する力を培う。公文式は、一人ひとりの「可能性の追求」を目指す教育です。 - 公式HPより
 
