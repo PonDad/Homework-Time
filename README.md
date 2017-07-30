@@ -1,85 +1,122 @@
-娘達（双子・6歳）も早いもので来年から小学生。就学前に春先から公文式に通い始めました。毎日行う宿題を家族皆でアシスト出来る様な仕組みを考えてみました。
+My children (twins, 6 years old) are also early items and are elementary school students from next year. Before school I started going to the "Kumon" expression from early spring. I tried an assist mechanism to watch the homework done by the children on a daily basis with their families.
 
-## 公文式学習法
+## Kumon: After School Math & Reading Programs
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kumon_Method_Logo.svg/1200px-Kumon_Method_Logo.svg.png)
+![Kumon Method Logo.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kumon_Method_Logo.svg/1200px-Kumon_Method_Logo.svg.png)
+By [Kumon](http://www.kumon.com/), Public domain
 
-> 公文式の特長 ～ 公文式学習とは解き方を教わるのではなく、自分の力で教材の問題を解く学習法で、「やればできる」という自己肯定感を育み、未知の領域にも、自分から挑戦する力を培う。公文式は、一人ひとりの「可能性の追求」を目指す教育です。 - 公式HPより
+> Features of Kumon - Kumon is not a method of teaching how to solve it, but by a learning method that solves problems of teaching materials with your own power, it fosters a self-affirmation that "can do if you do it", and even from unknown areas Develop the ability to challenge. Kumon expression is an education aiming at "pursuit of possibility" of each and every one. - From the official website
 
-![home-work-time-3.png](https://qiita-image-store.s3.amazonaws.com/0/47128/153626ae-f9b5-3ac6-f671-5a926f8066d9.png)
+![home-work-time-3.png](https://qiita-image-store.s3.amazonaws.com/0/47128/41d6016c-d714-6cc4-850c-2e2ed1d11041.png)
 
-ご自分がやられていた方も多いと思います。独自の教材を利用して、自分で学ぶ力を身につけていきます。
+Utilizing original texts of Kumon, children learn the ability to learn by themselves.
 
-算数であれば毎日10分の間に教材10枚を解答します。早く、正確に練習していくことがポイントになります。
+## Share with family
 
-## 家族で共有する
-
-宿題に掛かった時間は未就学児の場合は親が記入します。電子工作機器を利用してこんな仕組みを考えてみました。
+The time spent on homework is written by parent in case of preschool child. I tried this mechanism using electronic machine tools.
 
 ![DSC_0132.jpg](https://qiita-image-store.s3.amazonaws.com/0/47128/ea0f38d5-45d4-91c5-1f00-651ea8a0d036.jpeg)
 
-Seeed社のWioNodeとGroveシステムを使用したタイマーを利用します。ボタンを押すと10分のカウントダウンが始まります。終了したタイミングでボタンを押し、掛かった時間を計測する事が出来ます。（10分以上経過した場合はタイマーは自動で終了します）
+We use a timer using Seeed's WioNode and Grove system. When you press the button, the countdown of 10 minutes begins. You can measure the time it took by pushing the button at the end timing.（When more than 10 minutes have elapsed, the timer will automatically end）
 
-ちょっとこだわったポイントは、子供が毎日使うものなので単3電池3本で駆動させている事です。電源を入れるとRaspberryPiに立てたサーバーとwebsocketで接続されます。
+The point sticking is that it is driven by 3 AA batteries because children use it everyday.When you turn on the power, it connects to the server set up by RaspberryPi with websocket.
 
-計測した時間はIFTTT経由で様々なサービスへ送信する事が可能になります。lineに送信することも出来ますので、両親への通知・共有が簡単に行えます。ここでは宿題通知用に作成したlineグループに計測した時間を地通知しています。
+The measured time can be sent to various services via IFTTT. By sending it to line, it is easy to share information with parents. Here we are sending to the line group we created for notification.
 
 ![home-work-time-1.png](https://qiita-image-store.s3.amazonaws.com/0/47128/a7fefdb5-b8f8-a81b-119b-227773c99afe.png)
 
-外出先からも宿題が終わったタイミングを通知で確認することが出来ます。
+You can also check the time when the child finished his homework from the outside.
 
 ![home-work-time-8.png](https://qiita-image-store.s3.amazonaws.com/0/47128/ca3492ce-343c-fbdb-cab4-fb4439823a33.png)
 
 
-合わせてGoogleSpreadSheetsに学習時間を書き込める様にしてみました。学習した日にちと計測時間と合わせ、10分以上経過した場合は後で見直しが出来る様印を付けておきます。
+Write study time in Google spreadsheet. Mark it for more than 10 minutes.
 
-## GoogleAssistantで見守る
-
-SpreadSheetsを開けば詳細を確認出来るのですが、サポート役としてGoogle Assistantを活用してみることにしました。
+## GoogleAssistant
 
 [Homework Time - Google Assistant app - Youtube](https://www.youtube.com/watch?v=tJtANzVOpB8)
 
-GoogleSpreadSheetsのAPIを利用して、GoogleAssistantから学習状況を確認出来ます。こんな感じ。
+You can check the learning situation from Google Assistant using Google spreadsheet API.
 
 ![Video Caption Maker 2017-07-29 19-04-11.png](https://qiita-image-store.s3.amazonaws.com/0/47128/f01e4750-3b17-ad21-c085-f2fb84b02617.png)
 
-API.aiのintentsを利用して、SpreadSheetのデータを呼び出します。ここでは「名前＋日付」で検索します。「長女（Yolanda-仮名）＋日付（Today-ここでは2017年7月29日）」のjsonデータをActions on Googleにリクエストします。
+Call the spreadsheet data using api.ai's intents. Here we search by "name + date".Request Actions on Google for json data of "Name(Yolanda)) + Date (Today - July 29th, 2017)"す。
 
-日付はAPI.aiのentityを利用するので、「yesterday（昨日）」「day before yesterday（一昨日）」「two days ago（二日前）」など口語調で出した意図を汲み取ってくれます。
+Since the date uses the entity of api.ai, it will draw out the intention of spoken words such as "yesterday" "day before yesterday" "three days agoß".
 
 ![Video Caption Maker 2017-07-29 19-04-37.png](https://qiita-image-store.s3.amazonaws.com/0/47128/51617da5-d7f7-c595-bbbf-d98f9ee9518e.png)
 
-この日は休日で朝から宿題をやったので、10時4分から10時11分まで掛かった事が分かります。
-
-日にちだけの確認だけでなく、期間を指定して、10分の時間内に宿題が出来たかどうかを確認出来る様にしてみました。こんな感じです。
+In addition to just checking the date, you can specify the period and see if children can do homework within 10 minutes.
 
 ![Video Caption Maker 2017-07-29 19-29-12.png](https://qiita-image-store.s3.amazonaws.com/0/47128/638fcaf3-6ee9-2189-c7a9-ba10105b0d1e.png)
 
-ここでは「名前＋期間」で検索します。「次女（Amanda-仮名）＋期間（Last week-ここでは2017年7月17日から2017年7月23日）」のjsonデータをActions on Googleにリクエストします。
+Search by "name + period". I will request Actions on Google for json data of "  Name(Amanda) + period (Last week - July 17, 2017 to July 23, 2017) ".
 
-期間もAPI.aiのentityを利用します。「last week（先週）」「this month（今月）」「last month（先月）」など口語で指定した期間を、意図通りに汲み取ってくれます。
+We also use the api.ai entity for the period. We will pick up the period specified in spoken language as intended, such as "last week", "this month", "last month".
 
 ![Video Caption Maker 2017-07-29 19-29-32.png](https://qiita-image-store.s3.amazonaws.com/0/47128/653af972-075e-4d8e-dbe7-6c15f8eb971a.png)
 
-時間以内に宿題が出来た回数と出来なかった回数を教えてくれます。
+It tells the number of times the children were able to do their homework and the number of times they could not do it within hours.
 
 ![home-work-time-2.png](https://qiita-image-store.s3.amazonaws.com/0/47128/9422b34e-3d73-5d54-3244-5f7be3c51686.png)
 
-宿題は毎回先生が採点してくれています。解答が正解している事だけでなく、時間以内に出来ているかも次にステップに進むポイントになります。
+In Kumon, it is not only that the answer is correct but also it will be the point to go to the next step, even if it is done within time.
 
-Google Assistantで事前に確認しておけば、ポイントを絞って一緒に見直ししてあげる事が出来ますね。
-
-## 仕組み
+## Structure
 
 ### Wio Node & IFTTT
 
 ![wio-node (1).png](https://qiita-image-store.s3.amazonaws.com/0/47128/bcb65a49-82da-6147-ba9f-484e97236e3e.png)
 
+#### 1. Wio Node
+[WioNode](http://wiki.seeed.cc/Wio_Node/) [Grove - Button](http://wiki.seeed.cc/Grove-Button/) [Grove - 4-Digit Display](http://wiki.seeed.cc/Grove-4-Digit_Display/)Set it up and enable the API.
 
-## Raspberry Pi & Google Assistant SDK
+#### 2. websocket
+In order to be able to receive Seeed's API, set up a server in RaspberryPi with node.js. We use websocket to receive button press data and send count down time. Together store the start time and end time in the array.
+
+[Homework-Time/RaspberryPi/wio-node/app.js](https://github.com/PonDad/Homework-Time/blob/master/RaspberryPi/wio-node/app.js)
+
+[Homework-Time/RaspberryPi/wio-node/app2.js](https://github.com/PonDad/Homework-Time/blob/master/RaspberryPi/wio-node/app2.js)
+
+#### 3.PM2
+Process management has been daemonized using [PM2](http://pm2.keymetrics.io/). When WioNode is turned on, websocket is connected. .
+
+#### 4.IFTTT
+Make an account on [IFTTT](https://ifttt.com/discover) and make it available as a trigger for [webhook](https://ifttt.com/maker_webhooks).
+
+#### 5.webhook
+We send the start and end dates of homework from RaspberryPi's server to the endpoint of webhook. With webhook as the trigger, we send the start and end time of received homework to line and Google spreadsheet.
+
+
+
+### Raspberry Pi & Google Assistant SDK
 
 ![google-assistant.png](https://qiita-image-store.s3.amazonaws.com/0/47128/63ef4e98-99aa-452e-ee0c-5f1bc449ad66.png)
 
-## まとめ
+#### 1.Google Assistant SDK
+[Google Assistant SDK](https://developers.google.com/assistant/sdk/)Install to RaspberryPi
 
-双子の仮の名前として、映画「パルプフィクション」の登場人物「ハニー・バニー」ことYolandaと、その役を演じた女優Amanda Plummerさんからつけてみました。どうでもいいですね。
+#### 2.Actions on Google
+At [Actions on Google](https://developers.google.com/actions/), add a project and create a Google Assistant app. I used [api.ai](https://api.ai/) as a trigger of action this time.
+
+[Homework-Time/APIai/](https://github.com/PonDad/Homework-Time/tree/master/APIai)
+
+#### 3.Cloud Functions
+Actions on Google can be run by installing the executable file at [Cloud Functions](https://cloud.google.com/functions/?hl=en) on Google Cloud Platform.
+
+[Homework-Time/GCP/cloud_functions/](https://github.com/PonDad/Homework-Time/tree/master/GCP/cloud_functions)
+
+#### 4.Sheets API v4
+In order to use the data of Google spreadsheet, please use [Sheets API v4](https://developers.google.com/sheets/api/?hl=en). This time we will perform Oauth 2 authentication using the Pyhon library [Python Quickstart](https://developers.google.com/sheets/api/quickstart/python)
+
+[Homework-Time/RaspberryPi/spread-sheet/](https://github.com/PonDad/Homework-Time/tree/master/RaspberryPi/spread-sheet)
+
+#### 5.ngrok
+In order to connect to RaspberryPi from Cloud Functions, connect using [ngrok](https://ngrok.com/). I started it from node.js for easy management.
+
+[Homework-Time/RaspberryPi/ngrok/](https://github.com/PonDad/Homework-Time/tree/master/RaspberryPi/ngrok)
+
+
+## Summary
+
+Children like the timer and are using it each time they do their homework.I hope that GoogleAssistant will be a good support.Ciao.
