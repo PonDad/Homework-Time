@@ -6,7 +6,7 @@
 
 > 公文式の特長 ～ 公文式学習とは解き方を教わるのではなく、自分の力で教材の問題を解く学習法で、「やればできる」という自己肯定感を育み、未知の領域にも、自分から挑戦する力を培う。公文式は、一人ひとりの「可能性の追求」を目指す教育です。 - 公式HPより
 
-![home-work-time-3.png](https://qiita-image-store.s3.amazonaws.com/0/47128/fe9d0281-0868-196a-f7ce-138baa66ffaf.png)
+![home-work-time-3.png](https://qiita-image-store.s3.amazonaws.com/0/47128/153626ae-f9b5-3ac6-f671-5a926f8066d9.png)
 
 ご自分がやられていた方も多いと思います。独自の教材を利用して、自分で学ぶ力を身につけていきます。
 
