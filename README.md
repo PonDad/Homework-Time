@@ -2,7 +2,7 @@
 
 ![logo](https://github.com/PonDad/Homework-Time/blob/master/img/Actions%20on%20Google.png)
 
-My children (twins, 6 years old) are also early items and are elementary school students from next year. Before school I started going to the "Kumon" expression from early spring. I tried an assist mechanism to watch the homework done by the children on a daily basis with their families.
+My children (twins, 6 years old) are also early items and are elementary school students from next year. Before school They started going to the "Kumon" expression from early spring. I tried an assist mechanism to watch the homework done by the children on a daily basis with their families.
 
 ## Kumon: After School Math & Reading Programs
 
@@ -21,15 +21,15 @@ The time spent on homework is written by parent in case of preschool child. I tr
 
 ![DSC_0132.jpg](https://qiita-image-store.s3.amazonaws.com/0/47128/ea0f38d5-45d4-91c5-1f00-651ea8a0d036.jpeg)
 
-We use a timer using Seeed's WioNode and Grove system. When you press the button, the countdown of 10 minutes begins. You can measure the time it took by pushing the button at the end timing.（When more than 10 minutes have elapsed, the timer will automatically end）
+I use a timer using Seeed's WioNode and Grove system. When Children press the button, the countdown of 10 minutes begins. They can measure the time it took by pushing the button at the end timing.（When more than 10 minutes have elapsed, the timer will automatically end）
 
-The point sticking is that it is driven by 3 AA batteries because children use it everyday.When you turn on the power, it connects to the server set up by RaspberryPi with websocket.
+The point sticking is that it is driven by 3 AA batteries because children use it everyday.When they turn on the power, it connects to the server set up by RaspberryPi with websocket.
 
-The measured time can be sent to various services via IFTTT. By sending it to line, it is easy to share information with parents. Here we are sending to the line group we created for notification.
+The measured time can be sent to various services via IFTTT. By sending it to LINE, it is easy to share information with parents. Here we are sending to the line group we created for notification.
 
 ![home-work-time-1.png](https://qiita-image-store.s3.amazonaws.com/0/47128/a7fefdb5-b8f8-a81b-119b-227773c99afe.png)
 
-You can also check the time when the child finished his homework from the outside.
+We can also check the time when the child finished our children's homework from the outside.
 
 ![home-work-time-8.png](https://qiita-image-store.s3.amazonaws.com/0/47128/ca3492ce-343c-fbdb-cab4-fb4439823a33.png)
 
@@ -40,13 +40,13 @@ Write study time in Google spreadsheet. Mark it for more than 10 minutes.
 
 [Homework Time - Google Assistant app - Youtube](https://www.youtube.com/watch?v=tJtANzVOpB8)
 
-You can check the learning situation from Google Assistant using Google spreadsheet API.
+I can check the learning situation from Google Assistant using Google spreadsheet API.
 
 ![Video Caption Maker 2017-07-29 19-04-11.png](https://qiita-image-store.s3.amazonaws.com/0/47128/f01e4750-3b17-ad21-c085-f2fb84b02617.png)
 
-Call the spreadsheet data using api.ai's intents. Here we search by "name + date".Request Actions on Google for json data of "Name(Yolanda)) + Date (Today - July 29th, 2017)"す。
+Call the spreadsheet data using api.ai's intents. Here we search by "name + date".Request Actions on Google for json data of "Name(Yolanda)) + Date (Today - July 29th, 2017)"
 
-Since the date uses the entity of api.ai, it will draw out the intention of spoken words such as "yesterday" "day before yesterday" "three days agoß".
+Since the date uses the entity of api.ai, it will draw out the intention of spoken words such as "yesterday" "day before yesterday" "three days ago".
 
 ![Video Caption Maker 2017-07-29 19-04-37.png](https://qiita-image-store.s3.amazonaws.com/0/47128/51617da5-d7f7-c595-bbbf-d98f9ee9518e.png)
 
@@ -56,7 +56,7 @@ In addition to just checking the date, you can specify the period and see if chi
 
 Search by "name + period". I will request Actions on Google for json data of "  Name(Amanda) + period (Last week - July 17, 2017 to July 23, 2017) ".
 
-We also use the api.ai entity for the period. We will pick up the period specified in spoken language as intended, such as "last week", "this month", "last month".
+I also use the api.ai entity for the period. We will pick up the period specified in spoken language as intended, such as "last week", "this month", "last month".
 
 ![Video Caption Maker 2017-07-29 19-29-32.png](https://qiita-image-store.s3.amazonaws.com/0/47128/653af972-075e-4d8e-dbe7-6c15f8eb971a.png)
 
@@ -76,7 +76,7 @@ In Kumon, it is not only that the answer is correct but also it will be the poin
 [WioNode](http://wiki.seeed.cc/Wio_Node/) [Grove - Button](http://wiki.seeed.cc/Grove-Button/) [Grove - 4-Digit Display](http://wiki.seeed.cc/Grove-4-Digit_Display/)Set it up and enable the API.
 
 #### 2. websocket
-In order to be able to receive Seeed's API, set up a server in RaspberryPi with node.js. We use websocket to receive button press data and send count down time. Together store the start time and end time in the array.
+In order to be able to receive Seeed's API, set up a server in RaspberryPi with node.js. I use websocket to receive button press data and send count down time. Together store the start time and end time in the array.
 
 [Homework-Time/RaspberryPi/wio-node/app.js](https://github.com/PonDad/Homework-Time/blob/master/RaspberryPi/wio-node/app.js)
 
@@ -89,7 +89,7 @@ Process management has been daemonized using [PM2](http://pm2.keymetrics.io/). W
 Make an account on [IFTTT](https://ifttt.com/discover) and make it available as a trigger for [webhook](https://ifttt.com/maker_webhooks).
 
 #### 5.webhook
-We send the start and end dates of homework from RaspberryPi's server to the endpoint of webhook. With webhook as the trigger, we send the start and end time of received homework to line and Google spreadsheet.
+I send the start and end dates of homework from RaspberryPi's server to the endpoint of webhook. With webhook as the trigger, we send the start and end time of received homework to LINE and Google spreadsheet.
 
 
 
