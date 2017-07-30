@@ -1,0 +1,129 @@
+{
+  "userSays": [
+    {
+      "id": "ecd33bc9-3e21-4657-8b68-1e5c0d7b498d",
+      "data": [
+        {
+          "text": "Today",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Yolanda",
+          "alias": "yolanda_name",
+          "meta": "@yolanda_name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1d204127-7421-4035-ba7d-b77b6d2e2788",
+      "data": [
+        {
+          "text": "Yolanda",
+          "alias": "yolanda_name",
+          "meta": "@yolanda_name",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "today",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "839d8f96-963f-4f35-b0fd-296409e3fa56",
+      "data": [
+        {
+          "text": "Today",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "yolanda",
+          "alias": "yolanda_name",
+          "meta": "@yolanda_name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "29ae38a7-3c41-47dd-a504-48dc5adabcee",
+      "data": [
+        {
+          "text": "yolanda",
+          "alias": "yolanda_name",
+          "meta": "@yolanda_name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "today",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "ed7f612a-ea13-4eaf-90cd-4c1ec1ce5702",
+  "name": "yolandaDate",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.yolanda_date",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "isList": false
+        },
+        {
+          "dataType": "@yolanda_name",
+          "name": "yolanda_name",
+          "value": "$yolanda_name",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

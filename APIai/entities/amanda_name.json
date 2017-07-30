@@ -1,0 +1,15 @@
+{
+  "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "name": "amanda_name",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "Amanda",
+      "synonyms": [
+        "Amanda"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

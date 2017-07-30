@@ -1,0 +1,173 @@
+{
+  "userSays": [
+    {
+      "id": "db2babc0-4970-4fbe-9d80-7ebfa095c26f",
+      "data": [
+        {
+          "text": "Amanda",
+          "alias": "amanda_name",
+          "meta": "@amanda_name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "this month",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5645f01a-8e5b-489f-9c6c-7b9c7f546a7b",
+      "data": [
+        {
+          "text": "This month",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Amanda",
+          "alias": "amanda_name",
+          "meta": "@amanda_name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a44a00b6-0a60-4d50-9fe1-b7bd0cdc2069",
+      "data": [
+        {
+          "text": "This month",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "achy",
+          "alias": "amanda_name",
+          "meta": "@amanda_name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "317d00e0-4f87-4d9f-b0d4-c3cf2634a892",
+      "data": [
+        {
+          "text": "achy",
+          "alias": "amanda_name",
+          "meta": "@amanda_name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "this month",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f42e36f7-9573-4b93-8e99-f41759bdf4ae",
+      "data": [
+        {
+          "text": "This month",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "amanda",
+          "alias": "amanda_name",
+          "meta": "@amanda_name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ad4ff0f1-6d33-4f84-a67e-d5a522e3e7b7",
+      "data": [
+        {
+          "text": "amanda",
+          "alias": "amanda_name",
+          "meta": "@amanda_name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "this month",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "eedc705e-6343-481d-b6fb-99734779157b",
+  "name": "amandaPeriod",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.amanda_period",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@amanda_name",
+          "name": "amanda_name",
+          "value": "$amanda_name",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.date-period",
+          "name": "date-period",
+          "value": "$date-period",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

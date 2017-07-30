@@ -1,0 +1,47 @@
+{
+  "description": "This is an applications that support children\u0027s homework.",
+  "language": "en",
+  "googleAssistant": {
+    "googleAssistantCompatible": true,
+    "welcomeIntentSignInRequired": false,
+    "startIntents": [
+      {
+        "intentId": "511a3058-ee0f-4d79-b6d0-bdfaa40dcb14",
+        "signInRequired": false
+      },
+      {
+        "intentId": "ed7f612a-ea13-4eaf-90cd-4c1ec1ce5702",
+        "signInRequired": false
+      },
+      {
+        "intentId": "eedc705e-6343-481d-b6fb-99734779157b",
+        "signInRequired": false
+      },
+      {
+        "intentId": "f17c0ba2-690f-4f51-b8ed-124f2f32dd27",
+        "signInRequired": false
+      }
+    ],
+    "systemIntents": [],
+    "endIntentIds": [],
+    "oAuthLinking": {
+      "required": false,
+      "grantType": "AUTH_CODE_GRANT"
+    },
+    "voiceType": "MALE_1",
+    "capabilities": [],
+    "protocolVersion": "V2"
+  },
+  "defaultTimezone": "Asia/Tokyo",
+  "webhook": {
+    "url": "https://us-central1-home-work-172711.cloudfunctions.net/homeWork",
+    "headers": {
+      "": ""
+    },
+    "available": true,
+    "useForDomains": true
+  },
+  "isPrivate": true,
+  "customClassifierMode": "use.after",
+  "mlMinConfidence": 0.3
+}

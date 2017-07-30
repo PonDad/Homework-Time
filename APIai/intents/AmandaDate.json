@@ -1,0 +1,131 @@
+{
+  "userSays": [
+    {
+      "id": "71e98871-56e9-48e2-8e9a-30ece518eb3d",
+      "data": [
+        {
+          "text": "today",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Amanda",
+          "alias": "amanda_name",
+          "meta": "@amanda_name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "82921992-ded5-4711-868d-5b72e7ca65e1",
+      "data": [
+        {
+          "text": "Amanda",
+          "alias": "amanda_name",
+          "meta": "@amanda_name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "today",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4210e980-5c72-4213-9b43-4d87e1742ea3",
+      "data": [
+        {
+          "text": "Amanda",
+          "alias": "amanda_name",
+          "meta": "@amanda_name",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "today",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1c82a705-51d8-4b78-aa16-a0ff9f4b4b53",
+      "data": [
+        {
+          "text": "Today",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Amanda",
+          "alias": "amanda_name",
+          "meta": "@amanda_name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "511a3058-ee0f-4d79-b6d0-bdfaa40dcb14",
+  "name": "AmandaDate",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.Amanda_date",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": false,
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "prompts": [],
+          "isList": false
+        },
+        {
+          "dataType": "@amanda_name",
+          "name": "amanda_name",
+          "value": "$amanda_name",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,38 @@
+{
+  "name": "home-work",
+  "description": "This is an applications that support children's homework",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "author": "PonDad",
+  "engines": {
+    "node": "~6.0"
+  },
+  "scripts": {
+    "lint": "semistandard --fix \"**/*.js\"",
+    "start": "functions deploy homeWork --trigger-http",
+    "deploy": "gcloud beta functions deploy homeWork --trigger-http --stage-bucket xxxxxxxxxxx"
+  },
+  "dependencies": {
+    "actions-on-google": "^1.0.0",
+    "request": "^2.81.0",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
+    "readline": "^1.3.0","async": "~2.3.0",
+    "google-auth-library": "~0.10.0",
+    "string-template": "~1.0.0",
+    "googleapis":"~20.0.1"
+  },
+  "devDependencies": {
+    "semistandard": "^9.1.0"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/actions-on-google/apiai-webhook-template-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/actions-on-google/apiai-webhook-template-nodejs/issues"
+  },
+  "homepage": "https://github.com/actions-on-google/apiai-webhook-template-nodejs#readme"
+}

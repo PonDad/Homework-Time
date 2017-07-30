@@ -1,0 +1,129 @@
+{
+  "userSays": [
+    {
+      "id": "7ead7ffb-4b79-47ac-85d6-ffdf42f58c90",
+      "data": [
+        {
+          "text": "This month",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Yolanda",
+          "alias": "yolanda_name",
+          "meta": "@yolanda_name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "92518060-5a33-41e2-b811-eb6c8fd2a500",
+      "data": [
+        {
+          "text": "Yolanda",
+          "alias": "yolanda_name",
+          "meta": "@yolanda_name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "this month",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "db36c43e-32ed-4a27-add1-6e43c774c442",
+      "data": [
+        {
+          "text": "This month",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "yolanda",
+          "alias": "yolanda_name",
+          "meta": "@yolanda_name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "73ca372c-4dd6-48a5-8090-f7ecdd479d2e",
+      "data": [
+        {
+          "text": "yolanda",
+          "alias": "yolanda_name",
+          "meta": "@yolanda_name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "this month",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "f17c0ba2-690f-4f51-b8ed-124f2f32dd27",
+  "name": "yolandaPeriod",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.yolanda_period",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@yolanda_name",
+          "name": "yolanda_name",
+          "value": "$yolanda_name",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.date-period",
+          "name": "date-period",
+          "value": "$date-period",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}
