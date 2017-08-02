@@ -1,6 +1,6 @@
 # Homework Time - Google Assistant app
 
-![logo](https://github.com/PonDad/Homework-Time/blob/master/img/Actions%20on%20Google.png)
+![logo](https://github.com/PonDad/Homework-Time/blob/master/img/ActionsonGoogle.png)
 
 My children (twins, 6 years old) are also early items and are elementary school students from next year. Before school They started going to the "Kumon" expression from early spring. I tried an assist mechanism to watch the homework done by the children on a daily basis with their families.
 
