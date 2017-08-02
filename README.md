@@ -124,3 +124,6 @@ In order to connect to RaspberryPi from Cloud Functions, connect using [ngrok](h
 ## Summary
 
 Children like the timer and are using it each time they do their homework.I hope that GoogleAssistant will be a good support.Ciao.
+
+The MIT License
+Copyright (c) 2017 Studio Identical Twins
