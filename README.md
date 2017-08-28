@@ -135,6 +135,8 @@ The Google Assistant iOS application can now be used in Japan.
 
 It supports not only character input but also audio input.
 
+![homeworktime_ios2](https://github.com/PonDad/Homework-Time/blob/master/img/homeworktime_ios2.png)
+
 I can hardly wait for Japanese support for Actions on Google. Ciao.
 
 The MIT License
