@@ -135,8 +135,6 @@ The Google Assistant iOS application can now be used in Japan.
 
 It supports not only character input but also audio input.
 
-![2017-08-28 19_58_07.gif](https://qiita-image-store.s3.amazonaws.com/0/47128/682bb020-8b1f-2d22-b113-aa988c4339d8.gif)
-
 I can hardly wait for Japanese support for Actions on Google. Ciao.
 
 The MIT License
