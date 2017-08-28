@@ -131,7 +131,7 @@ The Google Assistant iOS application can now be used in Japan.
 
 [Homework Time - Google Assistant app on iOS -　YouTube](https://youtu.be/HC3oA2nDHF4)
 
-![2017-08-28 19_52_52.gif](https://qiita-image-store.s3.amazonaws.com/0/47128/157c394f-3893-29eb-e149-3d938cdb2fff.gif)
+![homeworktime_ios1](https://github.com/PonDad/Homework-Time/blob/master/img/homeworktime_ios1.png)
 
 It supports not only character input but also audio input.
 
