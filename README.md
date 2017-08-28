@@ -125,5 +125,19 @@ In order to connect to RaspberryPi from Cloud Functions, connect using [ngrok](h
 
 Children like the timer and are using it each time they do their homework.I hope that GoogleAssistant will be a good support.Ciao.
 
+## Additional notes: August 28, 2017
+
+The Google Assistant iOS application can now be used in Japan.
+
+[Homework Time - Google Assistant app on iOS -　YouTube](https://youtu.be/HC3oA2nDHF4)
+
+![2017-08-28 19_52_52.gif](https://qiita-image-store.s3.amazonaws.com/0/47128/157c394f-3893-29eb-e149-3d938cdb2fff.gif)
+
+It supports not only character input but also audio input.
+
+![2017-08-28 19_58_07.gif](https://qiita-image-store.s3.amazonaws.com/0/47128/682bb020-8b1f-2d22-b113-aa988c4339d8.gif)
+
+I can hardly wait for Japanese support for Actions on Google. Ciao.
+
 The MIT License
 Copyright (c) 2017 Studio Identical Twins
